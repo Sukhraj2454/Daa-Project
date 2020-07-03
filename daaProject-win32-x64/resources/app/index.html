@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>18103088</title>
+        <meta name='Author' content='Sukhraj Singh'>
+        <meta name='Submitted To' content="Dr. Kunwar Pal">
+        <link rel="stylesheet"  href ="main.css">
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+                <li class='part'><a href='#P0'>Home </a></li>
+                <li class='part'><a href='#P1'>Travelling Salesman</a></li>
+                <li class='part'><a href='#P2'>Prim's MST</a></li>
+                <li class='part'><a href='#P3'>Kruskal's MST</a></li>
+                <li class='part'><a href='#P4'>Dijkstra's MST</a></li>
+                <li class='part'><a href='#P5'>O/1 Knapsack</a></li>
+                <li><a id = 'reset' href='#GoodBye'>Reset</a></li>
+                <li><a id= 'mode'href="#light/Dark">DarkMode</a></li>
+                
+            </ul>
+        </nav>
+
+<!-- Home Section -->
+        <div id='P0'>
+            <div class='intp' id='intro'>
+                <h1>Click on the Tabs above to Navigate.</h1>
+                <h2>Designed & Crafted by:Sukhraj Singh</h2>
+                <h3>RollNo.18103088</h3>
+                <h2>Greedy Approach Used</h2>
+            </div>
+            <div id="P01" class='intp'>
+                <h1>Travelling Salesman</h1>
+                <p>Given a list of cities and the distances between each pair of cities, 
+                    what is the shortest possible route that visits each city once and returns to the origin city?</p>
+                <h4>Complexity:O(n^2)</h4>
+            </div>
+
+            <diV class='intp' id="P02">
+                <h1>Prim's Minimum Spanning Tree</h1>
+                <p>Prim's (also known as Jarník's) algorithm is a greedy algorithm that 
+                    finds a minimum spanning tree for a weighted undirected graph.<br>
+                    The algorithm operates by building this tree one vertex at a time, from an arbitrary starting vertex, at each step adding the 
+                    cheapest possible connection from the tree to another vertex.</p>
+                    <h4>Complexity:O ((|V|+|E|)log|V|)(Where |V|is the number of vertices and |E| is the number of edges.)</h4>
+            </diV>
+            <diV id="P03" class='intp'>
+                <h1>Kruskal's Minimum Spanning Tree</h1>
+                <p>Kruskal's algorithm is a minimum-spanning-tree algorithm which finds an edge of the least possible weight that connects any 
+                    two trees in the forest.
+                     It is a greedy algorithm in graph theory as it finds a minimum spanning tree for a
+                      connected weighted graph adding increasing cost arcs at each step.</p>
+                <h4>Complexity:O (|E|log|V|)(Where |V|is the number of vertices and |E| is the number of edges.)</h4>
+            </diV>
+            <diV id="P04" class='intp'>
+                <h1>Dijkstra's Shortest Path</h1>
+                <p>Dijkstra's algorithm
+                     is an algorithm for finding the shortest paths between nodes in a graph.
+                     Dijkstra's algorithm uses a data structure for storing and querying partial 
+                     solutions sorted by distance from the start. While the original algorithm uses a min-priority queue.</p>
+                <h4>Complexity:O(|V|+|E|log |V|)(Where |V|is the number of vertices and |E| is the number of edges.)</h4>
+            </diV>
+            <diV id="P05" class='intp'>
+                <h1>0/1 Knapsack</h1>
+                <p>A thief robbing a store finds n
+                    items. The ith item is worth 'k' dollars and weighs w(i) pounds, where k and w(i) are
+                    integers. The thief wants to take as valuable a load as possible, but he can carry at
+                    most W pounds in his knapsack, for some integer w. Which items should he take?</p>
+                <h4>Complexity:O(nW) where, n is the number of items and W is the capacity of knapsack.</h4>
+            </diV>
+        </div>
+
+<!--      Section 1   -->
+        <div id="P1" class='temp'>
+            <h1>Travelling Salesman</h1>
+            <div class = "matrixp1"></div>
+
+            <div class='fp1' id='formp1'>
+                <input type ='number' class='vp1' id ='verticesp1' name='Vertex' placeholder="City-Count">
+                <button class='sp1' id='Submitp1'>Submit</button>
+            </div> 
+
+            <div class='f1' id='formp12'>
+                <input type ='number' class='vp1' id ='vertexp11' name='Vertex' placeholder="City 1">
+                <input type ='number' class='vp1' id ='vertexp12' name='Vertex' placeholder="City 2">
+                <input type ='number' class='vp1' id ='weightp1' name='weight' placeholder="Distance" >
+                <button class='sp1' id='Submitp12'>Insert Path</button>
+                <input type ='number' class='vp1' id ='Source1'  name='Source City' placeholder="Source City">
+                <button class='sp1' id='Submitp13'>Calculate Tour</button>    
+            </div>
+            
+            <div class="matrixp1"></div>
+
+            <div class="solutionp1"></div>
+        </div>
+
+
+<!--      Section 2   -->
+        <div id="P2" class='temp'>
+            <h1>Prim's Minimum Spanning Tree</h1>
+            <div class = "matrix"></div>
+
+            <div class='f1' id='form'>
+                <input type ='number' class='v' id ='vertices' name='Vertex' placeholder="Vertex Count">
+                <button class='s' id='Submit'>Submit</button>
+            </div> 
+
+            <div class='f1' id='form2'>
+                <input type ='number' class='v' id ='vertex1' name='Vertex' placeholder="vertex1">
+                <input type ='number' class='v' id ='vertex2' name='Vertex' placeholder="vertex2">
+                <input type ='number' class='v' id ='weight' name='weight' placeholder="weight" >
+                <button class='s' id='Submit2'>Insert Edge</button>
+                <button class='s' id='Submit3'>Calculate MST</button>    
+            </div>
+            
+            <div class="matrix"></div>
+
+            <div class="solution"></div>
+        </div>
+
+<!--      Section 3   -->
+
+        <div id="P3" class='temp'>
+            <h1>Kruskal's Minimum Spanning Tree</h1>
+            <div class = "matrix3"></div>
+            <div class='f31' id='p3form'>
+                <input type ='number' class='v3' id ='vertices3' name='Vertex' placeholder="Vertex Count">
+                <button class='s3' id='Submitp3'>Submit</button>
+            </div>
+
+            <div class='f31' id='form32'>
+                <input type ='number' class='v3' id ='vertex13' name='Vertex' placeholder="vertex1">
+                <input type ='number' class='v3' id ='vertex23' name='Vertex' placeholder="vertex2">
+                <input type ='number' class='v3' id ='weight3' name='weight' placeholder="weight" >
+                <button class='s3' id='Submit23'>Insert Edge</button>
+                <button class='s3' id='Submitp33'>Calculate MST</button>    
+            </div>
+            <div class="matrix3"></div>
+
+            <div id="solution3"></div>
+        </div>
+        
+<!--      Section 4   -->
+        <div id="P4" class='temp'>
+            <h1>Dijkstra's shortest path</h1>
+            <div class = "matrix4"></div>
+            <div class='f41' id='p4form'>
+                <input type ='number' class='v4' id ='vertices4' name='Vertex' placeholder="Vertex Count">
+                <button class='s4' id='Submitp4'>Submit</button>
+            </div>
+
+            <div class='f41' id='form42'>
+                <input type ='number' class='v4' id ='vertex14' name='Vertex' placeholder="Vertex1">
+                <input type ='number' class='v4' id ='vertex24' name='Vertex' placeholder="Vertex2">
+                <input type ='number' class='v4' id ='weight4' name='weight' placeholder="Weight" >
+                <button class='s4' id='Submit24'>Insert Edge</button>
+                <input type ='number' class='v4' id='source' name='source' placeholder='Source-Node' value="1">
+                <button class='s4' id='Submitp43'>Calculate MST</button>    
+            </div>
+            <div class="matrix4"></div>
+
+            <div id="solution4"></div>
+        </div>
+<!--      Section 5   --> 
+        <div id="P5" class='temp'>
+            <h1>O/1 Knapsack</h1>
+                <div id='ks'>
+                    <input type='number' class='item' id='itv' name='item-quantity' placeholder="Item-value">
+                    <input type='number' class='item' id='itw' name='item-Value' placeholder="Item-weight">
+                    <button class='s5' id='item-button'>Insert Item</button>
+                    <input type='number' class='item' id='cc' name='carrying-capacity' placeholder="Sack-capacity">
+                    <button class='s5' id='Answer'> Find Best Pick</button>
+                </div>
+                
+                <div id='item-list'>
+                </div>
+
+                <div id='solution5'>
+                </div>
+
+        </div>
+ </body>
+
+    <script src='main.js'></script>
+</html>

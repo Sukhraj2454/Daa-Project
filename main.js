@@ -1,5 +1,4 @@
 console.log('Live');
-// var name = prompt('Enter Your Name:');
 
 prt_matrix = (m, count)=>{
     matrix[1].innerHTML+='Adjacency Matrix'+'<br>';
